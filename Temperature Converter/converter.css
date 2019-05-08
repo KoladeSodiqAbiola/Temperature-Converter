@@ -1,0 +1,15 @@
+#header{
+	background-color: gray; 
+	color:white; text-align: center;
+}
+.card{
+	background-color: whitesmoke; 
+}
+.form-group{
+	font-size: 30px; color: black;
+}
+
+#footer{
+	background-color: gray; color: blue;
+	text-align: center; padding: 30px;
+}

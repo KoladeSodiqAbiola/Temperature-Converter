@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css"></head>
+        <link rel="stylesheet" type="text/css" href="converter.css">
+    <body>
+        <div id="header">
+                <h1 style="padding:20px; font-family: algerian;"> Celsius to Fahrenheit Converter</h1>
+        </div>
+            <div class="row">
+            <div class="col col-md-6 col-lg-4 col-sm-12 justify-content-center mx-auto">
+           <div class="form-group">
+            <label for="Celsius" style="font-family: algerian;">Celsius(C)</label>
+            <input type="number" class="form-control" id="value1"/>
+
+        </div>
+        <br><br>
+        
+			<div class="form-group">
+				<label for="Fahrenheit" style="font-family: algerian;">Fahrenheit(F)</label>
+                <input type="number" class="form-control" id="value2" disabled="disabled"/>
+                <br>
+                <br>
+                <button type="button" class="btn btn-secondary btn-lg btn-block"  onclick="Calculate()" style="font-family: algerian;" >Convert</button>
+            </div>
+            </div>
+        </div>
+    </div>
+            <script>
+                function Calculate() {
+                    x = document.getElementById("value1").value;
+                    
+                    if(x == ""){
+			document.getElementById("value2").value = "";
+		}
+        else{
+            document.getElementById("value2").value = (x * (9/5) + 32);
+            
+        }
+                    
+                }
+            </script>
+            <div id="footer">
+                <img src="logohubb.png">
+                
+            </div>
+    </body>
+</html>
